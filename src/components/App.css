@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee&family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+html {
+  overflow-y: scroll;
+}
+.header-title {
+  width: 100%;
+  border-bottom: 3px solid gray;
+}
+.header-title h1 {
+  text-align: center;
+  letter-spacing: 1px;
+  font-family: "Bungee", sans-serif;
+  color: rgba(0, 0, 0, 0.7);
+}
+.add.contact {
+  width: 100%;
+}
+.add-contact-title {
+  width: 100%;
+  margin-top: 30px;
+}
+.add-contact-title h2 {
+  font-family: "Bungee", sans-serif;
+  text-align: center;
+  letter-spacing: 1px;
+}
+.contact-form {
+  width: 50%;
+  height: auto;
+  margin: 0px auto;
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.name,
+.email {
+  font-size: 1.3em;
+  letter-spacing: 1px;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.7);
+}
+.name input,
+.email input {
+  width: 350px;
+  height: 7vh;
+  padding-left: 10px;
+  padding: 10px;
+  border: 1px solid black;
+}
+.contact-form input:focus {
+  outline: none;
+  border: 1px solid blue;
+}
+.contact-form button {
+  background-color: blue;
+  padding: 10px 20px;
+  font-size: 1.1em;
+  letter-spacing: 1px;
+  color: white;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: all linear 150ms;
+  cursor: pointer;
+  border: none;
+}
+.contact-form button:hover {
+  background-color: rgb(0, 0, 139);
+}
+.contact {
+  width: 50%;
+  height: 12vh;
+  margin: 0px auto;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: red; */
+  padding: 10px;
+  border-top: 2px solid rgba(0, 0, 0, 0.5);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+}
+.contact-desc {
+  display: flex;
+  gap: 1em;
+}
+.contact-avatar img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+.desc-name {
+  font-weight: bold;
+  font-size: 1.2em;
+  letter-spacing: 1px;
+}
+.desc-email a {
+  font-size: 0.9em;
+  color: blue;
+}
+.contact-update {
+  display: flex;
+  gap: 0.5em;
+}
+.edit {
+  font-size: 1.2em;
+  color: rgb(53, 53, 248);
+  cursor: pointer;
+}
+.delete {
+  font-size: 1.2em;
+  color: rgb(255, 41, 41);
+  cursor: pointer;
+}
+.search {
+  width: 60%;
+  margin: 0px auto;
+  text-align: center;
+  position: relative;
+  margin-bottom: 40px;
+  margin-top: 20px;
+}
+.search-input {
+  width: 30%;
+  height: 8vh;
+  padding-left: 13px;
+  border-radius: 4px;
+  border: 1px solid black;
+}
+.search-icon {
+  position: absolute;
+  top: 15px;
+  right: 300px;
+  font-size: 1.2em;
+  color: rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+}
+.sucess {
+  width: 100%;
+  text-align: center;
+}
+.sucess-box p {
+  padding-left: 5px;
+}
+.sucess-box {
+  max-width: 250px;
+  margin-right: auto;
+  margin-left: auto;
+  line-height: 8vh;
+  height: 8vh;
+  background-color: green;
+  color: white;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+.sucess-box button {
+  background-color: red;
+  border-radius: 50%;
+  border: none;
+  color: white;
+  margin-left: 30px;
+  font-size: 1.3em;
+  cursor: pointer;
+}
+.sucess-box button span {
+  padding: 7px 12px;
+}
+.search input {
+  max-width: 400px;
+  padding: 5px 10px;
+}
+.no-contacts {
+  text-align: center;
+  color: red;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
